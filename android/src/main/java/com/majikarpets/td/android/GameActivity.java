@@ -1,6 +1,6 @@
 package com.majikarpets.td.android;
 
-import com.majikarpets.td.core.Game;
+import com.majikarpets.td.Game;
 
 import android.os.Bundle;
 

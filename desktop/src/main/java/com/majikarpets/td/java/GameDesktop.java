@@ -3,7 +3,7 @@ package com.majikarpets.td.java;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
-import com.majikarpets.td.core.Game;
+import com.majikarpets.td.Game;
 
 public class GameDesktop {
 	public static void main (String[] args) {

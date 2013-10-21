@@ -1,6 +1,6 @@
 package com.majikarpets.td.html;
 
-import com.majikarpets.td.core.Game;
+import com.majikarpets.td.Game;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;

@@ -1,4 +1,4 @@
-package com.majikarpets.td.core;
+package com.majikarpets.td;
 
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.Texture;
@@ -7,6 +7,7 @@ import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 
 public class Game implements ApplicationListener {
+	
 	Texture texture;
 	SpriteBatch batch;
 	float elapsed;
