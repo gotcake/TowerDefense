@@ -20,7 +20,7 @@ public class UnitFactory {
 	 * @param r the UnitReadier
 	 * @param unitTypes the types to register with
 	 */
-	public static void registerUnitFactory(UnitReadier r, int... unitTypes) {
+	public static void registerUnitReadier(UnitReadier r, int... unitTypes) {
 		for (int type: unitTypes)
 			factoryMap.put(type, r);
 	}
