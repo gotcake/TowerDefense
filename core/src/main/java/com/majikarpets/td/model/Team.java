@@ -1,5 +1,9 @@
 package com.majikarpets.td.model;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -7,9 +11,10 @@ import java.util.Map;
 import java.util.HashMap;
 
 import com.majikarpets.td.GameRuntimeException;
+import com.majikarpets.td.StreamSerializable;
 import com.majikarpets.td.util.IntegerPair;
 
-public class Team {
+public class Team implements StreamSerializable {
 	
 	private static int nextTeamId = 1;
 	
@@ -113,5 +118,17 @@ public class Team {
 	public void removeUnit(Unit unit) {
 		units.remove(unit);
 	}
+
+	@Override
+	public void serializeBinary(DataOutputStream out) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void deserializeBinary(DataInputStream in) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }

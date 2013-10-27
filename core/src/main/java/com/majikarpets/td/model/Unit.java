@@ -1,17 +1,22 @@
 package com.majikarpets.td.model;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
 import com.badlogic.gdx.math.Vector2;
+import com.majikarpets.td.StreamSerializable;
 
 /**
  * An unit in the game that gives or takes damage, and can possibly move.
  * This is a "dumb" class that simply keeps track of all of the data for a given unit.
  * @author Aaron Cake
  */
-public class Unit {
+public class Unit implements StreamSerializable {
 	
 	/*
 	 * Fields in Unit are declared public since Unit is simply a data container,
@@ -102,6 +107,18 @@ public class Unit {
 	 */
 	public void clearTargets() {
 		activeTargets.clear();
+	}
+
+	@Override
+	public void serializeBinary(DataOutputStream out) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deserializeBinary(DataInputStream in) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
