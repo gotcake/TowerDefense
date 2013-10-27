@@ -1,6 +1,9 @@
 # Build Artifacts
 core/target/
 android/target/
+android/bin/
+android/gen/
+android/libs/
 html/target/
 ios/target/
 desktop/target/
@@ -8,6 +11,8 @@ desktop/target/
 
 # Eclipse Files
 .project
+default.properties
+.classpath
 .settings/
 **/.settings/
 
