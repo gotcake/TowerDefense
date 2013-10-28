@@ -8,7 +8,9 @@ public class TestTest {
 
 	@Test
 	public void test() {
-		//fail("Not yet implemented");
+		int a = 4 + 4;
+		int b = 3 + 5;
+		assertTrue(a == b);
 	}
 
 }
