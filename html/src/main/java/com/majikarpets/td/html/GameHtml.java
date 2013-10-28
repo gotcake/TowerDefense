@@ -17,14 +17,4 @@ public class GameHtml extends GwtApplication {
 		return new GwtApplicationConfiguration(480, 320);
 	}
 
-	public void log(String tag, String message, Throwable exception) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public int getLogLevel() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 }
