@@ -17,6 +17,9 @@ import com.majikarpets.td.StreamSerializable;
 
 /**
  * Contains all the information about a given level
+ * 
+ * TODO: Serialization 
+ * 
  * @author Aaron Cake
  */
 public class Level implements StreamSerializable {
@@ -36,11 +39,11 @@ public class Level implements StreamSerializable {
 	}
 	
 	/** The width of the level */
-	private final int width;
+	private int width;
 	
 	/** The height of the level */
-	private final int height;
-	
+	private int height;
+
 	/** The width in cells of the border area (non viewable, non-playable) area of the game */
 	private int border;
 	
@@ -73,7 +76,7 @@ public class Level implements StreamSerializable {
 		teamBaseLocations = new ArrayList<GridCoordinate>();
 		teamSpawnableAreas = new ArrayList<List<GridCoordinate>>();
 		for (int i=0; i<teams; i++) {
-			
+			this.addTeam();
 		}
 	}
 	
@@ -208,6 +211,38 @@ public class Level implements StreamSerializable {
 	 */
 	public List<GridCoordinate> getSpawnableAreaForTeam(int id) {
 		return teamSpawnableAreas.get(id);
+	}
+	
+	/**
+	 * Get the width of the border in cells
+	 * @return the border
+	 */
+	public int getBorder() {
+		return border;
+	}
+
+	/**
+	 * Set the width of the border
+	 * @param border the border width in cells
+	 */
+	public void setBorder(int border) {
+		this.border = border;
+	}
+
+	/**
+	 * Gets the width of the level, including borders
+	 * @return the width of the level including borders
+	 */
+	public int getWidth() {
+		return width;
+	}
+
+	/**
+	 * Getst the height of the level, including borders
+	 * @return the height of the level including borders
+	 */
+	public int getHeight() {
+		return height;
 	}
 
 	@Override
