@@ -22,5 +22,11 @@ public abstract class AbstractWorldController {
 	 * Theres alot to do here...
 	 */
 	
+	public void updateUnits(float t) {
+		
+	}
+	
+	
+	
 	
 }
