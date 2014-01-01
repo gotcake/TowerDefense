@@ -1,0 +1,10 @@
+#myID {
+	height: 300u;
+	width: 300%;
+}
+
+#main .other component, #main .thing * > div.cls:hover {
+	transition: width 3s, height 500ms;
+	background-color: rgb( 1.0, 0.2, 0.5 );
+	color: #112233;
+}
